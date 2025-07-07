@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #dbeafe);
+}
+
+header {
+  background-color: #0d47a1;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: white;
+  color: #0d47a1;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 40px;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  z-index: 999;
+}
+
+.dropdown a {
+  color: #0d47a1;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #206e3c;
+}
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 180px;
+  background-color: #102027;
+  min-height: 100vh;
+  padding: 20px 10px;
+  color: white;
+  position: relative;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid #455a64;
+}
+
+.sidebar nav a:hover {
+  background-color: #37474f;
+}
+
+/* Sidebar dropdown */
+.sidebar-link {
+  position: relative;
+}
+
+/* Make sidebar dropdown clearly visible */
+.sidebar-dropdown {
+  display: none;
+  position: absolute;
+  background-color: #2d0a73; /* White background */
+  border: 1px solid #ccc;
+  z-index: 1000;
+  padding: 8px 0;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Show dropdown */
+.sidebar-dropdown.show {
+  display: block;
+}
+
+/* Style for each link in the dropdown */
+.sidebar-dropdown a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #000000; /* Black text */
+}
+
+/* Hover effect for dropdown items */
+.sidebar-dropdown a:hover {
+  background-color: #e6f0ff;
+  color: #003366;
+}
+
+
+
+/* Hover effect for better visibility */
+.sidebar-dropdown a:hover {
+  background-color: #dcdcdc;
+  color: #000;
+}
+
+
+.card-section {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.welcome-note {
+  margin-top: 20px;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel-container {
+  margin: 30px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  gap: 15px;
+}
+
+.carousel-track img {
+  width: 30%;
+  border-radius: 10px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.notice-board {
+  background-color: #fff8dc;
+  border-left: 5px solid orange;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .card-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-track img {
+    width: 90%;
+  }
+
+  .carousel-container {
+    margin-top: 15px;
+  }
+}
+/* ========== Modal Styles ========== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #ffffff;
+  margin: 5% auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 24px;
+  color: #444;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-header .tab {
+  padding: 10px 20px;
+  background: #f1f1f1;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.modal-header .tab.active {
+  background: #0d47a1;
+  color: white;
+  border-radius: 4px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.modal-body input,
+.modal-body select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.modal-body button[type="submit"],
+.modal-body button[type="button"] {
+  background-color: #0d47a1;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-body button:hover {
+  background-color: #063970;
+}
+
+/* Responsive Modal */
+@media (max-width: 500px) {
+  .modal-content {
+    padding: 20px 15px;
+  }
+}

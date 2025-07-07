@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Student Registration</h2>
+    <p>If you're a hostel border, mess official, or hostel staff, please register here.</p>
+    <form id="studentRegisterForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="parentage">Parentage:</label>
+      <input type="text" id="parentage" required />
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" required />
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" required />
+
+      <label for="hostel">Hostel Name:</label>
+      <input type="text" id="hostel" required />
+
+      <label for="room">Room No:</label>
+      <input type="text" id="room" required />
+
+      <label for="mobile">Mobile No:</label>
+      <input type="tel" id="mobile" required />
+      <button type="button" onclick="sendMobileOTP()">Send OTP</button>
+      <input type="text" id="mobileOtp" placeholder="Enter Mobile OTP" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required />
+      <button type="button" onclick="sendEmailOTP()">Send OTP</button>
+      <input type="text" id="emailOtp" placeholder="Enter Email OTP" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #bbdefb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #0d47a1;
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.captcha-container .captcha {
+  background-color: #0d47a1;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+.forgot {
+  display: block;
+  margin-top: 10px;
+  color: #0d47a1;
+  text-decoration: none;
+}

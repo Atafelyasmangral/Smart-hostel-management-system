@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mehboob-ul-Ulam (MA) Boys Hostel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background: #f8fafc; margin: 0; }
+    .main-header { background: #007bff; color: #fff; padding-bottom: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.07); }
+    .header-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 18px 40px 0 40px; }
+    .site-title { font-size: 2.1rem; font-weight: 700; margin: 0; letter-spacing: 1px; }
+    .nav-bar { display: flex; gap: 12px; }
+    .nav-btn { background: #fff; color: #007bff; border: none; border-radius: 5px; padding: 8px 18px; font-size: 1rem; font-weight: 500; cursor: pointer; text-decoration: none; transition: background 0.2s, color 0.2s; }
+    .nav-btn:hover, .nav-btn:focus { background: #e9f2fb; color: #0056b3; }
+    .login-btn { background: #ff9800; color: #fff; font-weight: 600; }
+    .login-btn:hover { background: #e65100; color: #fff; }
+    .hostel-heading { margin: 0; font-size: 1.5rem; font-weight: 600; letter-spacing: 1px; }
+    .hostel-subheading { margin: 0 0 18px 0; font-size: 1.2rem; font-weight: 400; }
+    .section { max-width: 950px; margin: 30px auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.09); padding: 36px 32px; }
+    .card-row { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+    .card { background: #e9f2fb; border-radius: 10px; padding: 22px 24px; margin-bottom: 0; box-shadow: 0 1px 6px rgba(0,0,0,0.08); display: flex; align-items: center; min-width: 270px; max-width: 350px; }
+    .card img { width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; object-fit: cover; border: 2px solid #007bff; }
+    .card .info { font-size: 18px; }
+    .info-blocks { display: flex; gap: 40px; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+    .info-section { background: #f4f8fd; border-radius: 8px; padding: 18px 22px; min-width: 260px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+    h2, h3 { color: #007bff; }
+    ul { padding-left: 20px; }
+    table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+    th, td { border: 1px solid #cce0f7; padding: 12px; text-align: center; font-size: 1rem; }
+    th { background: #007bff; color: #fff; font-size: 1.05rem; }
+    .footer { text-align: center; color: #888; margin: 40px 0 10px 0; }
+    @media (max-width: 900px) {
+      .section { padding: 18px 5vw; }
+      .header-top { flex-direction: column; gap: 10px; padding: 18px 5vw 0 5vw; }
+      .info-blocks { flex-direction: column; gap: 18px; }
+      .card-row { flex-direction: column; gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <h1 class="site-title" style="text-align:center; font-size:2.5rem; font-weight:800; margin:0; padding:32px 0 18px 0; letter-spacing:2px; color:#007bff;">Smart Hostel Management System</h1>
+    <nav class="nav-bar" style="display:flex; justify-content:center; gap:18px; margin-bottom:18px;">
+      <a href="index.html" class="nav-btn">🏠 Back to Home</a>
+      <a href="girls hostel.html" class="nav-btn">Girls Hostel</a>
+      <a href="gallery.html" class="nav-btn">Hostel Gallery</a>
+      <button class="nav-btn login-btn" onclick="window.location.href='index.html#authModal'">Register / Login</button>
+    </nav>
+    <h2 class="hostel-heading" style="text-align:center; margin:0; font-size:1.5rem; font-weight:600; letter-spacing:1px;">Mehboob-ul-Ulam (MA) Boys Hostel</h2>
+    <h3 class="hostel-subheading" style="text-align:center; margin:0 0 18px 0; font-size:1.1rem; font-weight:400; color:#444;">Inside Campus Hostel</h3>
+  </header>
+  <div class="section">
+    <div class="card-row" style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-bottom:30px;">
+      <div class="card" style="background:#e9f2fb; border-radius:10px; padding:22px 24px; margin-bottom:0; box-shadow:0 1px 6px rgba(0,0,0,0.08); display:flex; align-items:center; min-width:270px; max-width:350px;">
+        <img src="image 22.png" alt="Acting Warden" style="width:80px; height:80px; border-radius:50%; margin-right:20px; object-fit:cover; border:2px solid #007bff;">
+        <div class="info" style="font-size:18px;">
+          <strong>Dr. Aijaz Ahmad</strong><br>
+          Acting Warden<br>
+          Email: aijaz.warden@university.edu
+        </div>
+      </div>
+      <div class="info-section" style="background:#f4f8fd; border-radius:8px; padding:18px 22px; min-width:260px; box-shadow:0 1px 4px rgba(0,0,0,0.04);">
+        <h3>Warden List</h3>
+        <ul>
+          <li>Dr. Aijaz Ahmad (Acting Warden)</li>
+          <li>Prof. Bashir Lone (Senior Warden)</li>
+          <li>Mr. Imran Dar (Assistant Warden)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="info-section" style="background:#f4f8fd; border-radius:8px; padding:18px 22px; margin-bottom:30px; box-shadow:0 1px 4px rgba(0,0,0,0.04); max-width:700px; margin:auto;">
+      <h3>Eligibility</h3>
+      <p style="margin:0; color:#333; font-size:1.08rem;">Accommodation in Mehboob-ul-Ulam (MA) Boys Hostel is open to full-time students of Kashmir University whose permanent residence is at least 70 km away from the main campus. Priority is given to students with outstanding academic records and those involved in university activities. Hostel admission is subject to availability and university guidelines.</p>
+    </div>
+    <h3>Room Details</h3>
+    <table>
+      <tr><th>Room Type</th><th>Capacity</th><th>Facilities</th></tr>
+      <tr><td>Two Bedded</td><td>50</td><td>Bed, Table, Chair, Cupboard, WiFi</td></tr>
+      <tr><td>Three Bedded</td><td>30</td><td>Bed, Table, Chair, Cupboard, WiFi</td></tr>
+    </table>
+    <h3>Other Facilities</h3>
+    <ul>
+      <li>24x7 Security & CCTV</li>
+      <li>Common Room with TV</li>
+      <li>Indoor Games</li>
+      <li>Medical Facility</li>
+      <li>Laundry Service</li>
+    </ul>
+    <h3>Mess Members</h3>
+    <ul>
+      <li>Mess Manager: Mr. Shabir Ahmad</li>
+      <li>Head Cook: Mr. Farooq Dar</li>
+      <li>Mess Staff: 5</li>
+    </ul>
+    <h3>Mess Student Committee</h3>
+    <ul>
+      <li>Chairperson: Sameer Lone (MSc Physics)</li>
+      <li>Secretary: Adil Mir (MA English)</li>
+      <li>Members: 5 student representatives</li>
+    </ul>
+    <h3>Rebate Student Committee</h3>
+    <ul>
+      <li>Chairperson: Bilal Ahmad (MBA)</li>
+      <li>Members: 3 student representatives</li>
+    </ul>
+    <h3>Rebate Policy</h3>
+    <p style="margin:0; color:#333; font-size:1.08rem;">Rebate in mess charges is allowed only for a maximum of seven days in a month, subject to prior approval by the Rebate Committee. Applications must be submitted in advance and are considered as per hostel rules.</p>
+  </div>
+  <div class="footer">Designed by Ataf Elyas</div>
+</body>
+</html>

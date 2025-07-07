@@ -1,0 +1,203 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body & Container */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  line-height: 1.5;
+}
+
+.page-header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #0d47a1;
+  color: white;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+}
+
+.page-header p {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.gallery-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hostel Section Titles */
+.hostel-section {
+  margin-bottom: 40px;
+}
+
+.hostel-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0d47a1;
+}
+
+/* Subsection (each hostel) */
+.subsection {
+  margin-bottom: 30px;
+}
+
+.subsection h3 {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #1565c0;
+}
+
+/* Responsive Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Each gallery item */
+.gallery-item {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  padding: 10px 5px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Lightbox / Modal Styles */
+.lightbox-modal {
+  display: none;            /* Hidden by default */
+  position: fixed;          /* Stay in place */
+  z-index: 10000;           /* Sit on top */
+  padding-top: 60px;        /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;              /* Full width */
+  height: 100%;             /* Full height */
+  overflow: auto;           /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.lightbox-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.lightbox-caption {
+  margin: 15px auto;
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #bbb;
+}
+
+/* Footer */
+.page-footer {
+  background: #0d47a1;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .gallery-track img {
+    width: 90%;
+  }
+}
+/* Navbar Styling */
+ .navbar {
+  background-color: #007bff;
+  padding: 10px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #0056b3;
+}
+
+  

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Hostel Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Smart Hostel Management System</h1>
+    <div class="buttons">
+      <button id="openModalBtn">Login / Register</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <nav>
+        <a href="boys hostel.html">Boys Hostel</a>
+        <a href="girls hostel.html">Girls Hostel</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="events.html">Events</a>
+        <a href="eligibility.html">Eligibility</a>
+        <div class="sidebar-link">
+          <a href="#" onclick="toggleSidebarDropdown()">Important Links ▼</a>
+          <div id="sidebarDropdown" class="sidebar-dropdown">
+            <a href="https://www.kashmiruniversity.net" target="_blank">Kashmir University</a>
+            <a href="#">Submit Hostel Form</a>
+            <a href="#">Download Prospectus</a>
+            <a href="#">University Notifications</a>
+          </div>
+        </div>
+        <a href="feedback.html">Feedback</a>
+      </nav>
+    </aside>
+
+    <main>
+      <section class="welcome-note">
+        <h2>Welcome to Smart Hostel Management System</h2>
+        <p>This platform offers smart room allocation, AI-based complaint prioritization, and various student tools for a better hostel experience.</p>
+      </section>
+
+      <section class="card-section">
+        <div class="card">
+          <img src="image vc mam.png" alt="VC" />
+          <h3>Vice Chancellor</h3>
+          <p>Prof. Nilofer Khan<br>vc@university.edu</p>
+        </div>
+        <div class="card">
+          <img src="vc.png" alt="Chief Proctor" />
+          <h3>Chief Proctor</h3>
+          <p>Dr. Imtiyaz Khan<br>proctor@university.edu</p>
+        </div>
+      </section>
+
+      <section class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="image 22.png" alt="Hostel Image 2">
+            <img src="image 12 copy.png" alt="Hostel Image 1">
+            <img src="WhatsApp Image 2025-06-01 at 20.02.25_839552d0.jpg" alt="Hostel Image 3">
+            <img src="WhatsApp Image 2025-06-02 at 17.12.15_5ba3f26e.jpg" alt="Hostel Image 4">
+            <img src="WhatsApp Image 2025-06-02 at 09.41.31_e1ab563a.jpg" alt="Hostel Image 5">
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-board">
+        <h3>📌 Notice Board</h3>
+        <ul>
+          <li>Hostel Admission Opens from June 1</li>
+          <li>Mess Menu Updated</li>
+          <li>Maintenance Notice</li>
+          <li>Orientation on July 5</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 Smart Hostel Management System | Designed by @atafelyas
+  </footer>
+
+  <!-- 🌟 MODAL HTML STARTS HERE -->
+  <div id="authModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <div class="modal-header">
+        <button id="loginTab" class="tab active">Login</button>
+        <button id="registerTab" class="tab">Register</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Role Selection -->
+        <label for="userRole">I am a:</label>
+        <select id="userRole">
+          <option value="student">Student</option>
+          <option value="admin">Admin</option>
+          <option value="mess">Mess Staff</option>
+        </select>
+
+        <!-- Login Form -->
+        <form id="loginForm">
+          <input type="text" placeholder="Username" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot Password?</a>
+          <button type="submit">Login</button>
+        </form>
+
+        <!-- Register Form -->
+        <form id="registerForm" style="display: none;">
+          <input type="text" placeholder="Name" required />
+          <input type="text" placeholder="Parentage" required />
+          <input type="text" placeholder="Semester" required />
+          <input type="text" placeholder="Department" required />
+          
+          <label for="gender">Gender:</label>
+          <select id="gender" required>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Trans</option>
+          </select>
+
+          <label for="hostel">Hostel:</label>
+          <select id="hostel" required>
+            <option disabled selected>Select Hostel</option>
+            <option>MA Hostel</option>
+            <option>MAK Hostel</option>
+            <option>SA Hostel</option>
+            <option>Bibi Fatima Hostel</option>
+            <option>Habba Khatoon Hostel</option>
+          </select>
+
+          <input type="text" placeholder="Enrollment No" required />
+          <input type="text" placeholder="Hostel Allotted" required />
+          <input type="text" placeholder="Room No (if any)" />
+
+          <input type="email" placeholder="Email" required />
+          <button type="button">Send OTP</button>
+
+          <input type="text" placeholder="Mobile Number" required />
+          <button type="button">Send OTP</button>
+
+          <input type="text" placeholder="Captcha" required />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 🌟 MODAL HTML ENDS HERE -->
+
+<!-- Auth Modal -->
+
+
+  <script src="script.js"></script>
+</body>
+</html>
